@@ -8,7 +8,12 @@
 </head>
 
 <body class="container mt-5">
-    <h2>Add Farmer</h2>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Add Farmer</h2>
+        <div>
+            <a href="{% url 'attendance_list' %}" class="btn btn-outline-secondary btn-sm">Go to Attendance</a>
+        </div>
+    </div>
 
     {# Flash messages #}
     {% if messages %}
